@@ -1,0 +1,24 @@
+<div class="box">
+    <h2>Habilidades y Competencias</h2>
+</div>
+<body style="background-color: pink;">
+     <table border="0">
+
+     <ul *ngFor="let skill of Skills">
+     <li>
+           <tr>
+              <td> {{ skill.fecha }} </td>
+   
+          <ul *ngFor="let logro of skill.logros">
+              <li>
+                  <tr>
+                    <td> {{ logro.descripcion }} </td>
+                  </tr>
+                </li>
+
+          </ul>
+      </li>
+        
+    </ul>
+</table>
+</body>
